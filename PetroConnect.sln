@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetroConnect.API", "PetroConnect\PetroConnect.API.csproj", "{B63C7AC2-FF71-4138-B1BB-1152FA615BAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetroConnect.Auth", "PetroConnect.Auth\PetroConnect.Auth.csproj", "{35285EDD-6553-4738-99DA-4A0C02FCB7B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetroConnect.Data", "PetroConnect.Data\PetroConnect.Data.csproj", "{CBDA4350-3AE2-462E-9ACE-80E0F1BEB8FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetroConnect.Test", "PetroConnect.Test\PetroConnect.Test.csproj", "{872236CD-3A37-42BF-8D78-B718958A1C50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B63C7AC2-FF71-4138-B1BB-1152FA615BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63C7AC2-FF71-4138-B1BB-1152FA615BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63C7AC2-FF71-4138-B1BB-1152FA615BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63C7AC2-FF71-4138-B1BB-1152FA615BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35285EDD-6553-4738-99DA-4A0C02FCB7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35285EDD-6553-4738-99DA-4A0C02FCB7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35285EDD-6553-4738-99DA-4A0C02FCB7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35285EDD-6553-4738-99DA-4A0C02FCB7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDA4350-3AE2-462E-9ACE-80E0F1BEB8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDA4350-3AE2-462E-9ACE-80E0F1BEB8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDA4350-3AE2-462E-9ACE-80E0F1BEB8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDA4350-3AE2-462E-9ACE-80E0F1BEB8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872236CD-3A37-42BF-8D78-B718958A1C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872236CD-3A37-42BF-8D78-B718958A1C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872236CD-3A37-42BF-8D78-B718958A1C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872236CD-3A37-42BF-8D78-B718958A1C50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B96BDBE-B2CD-4119-A630-DBBD9F531353}
+	EndGlobalSection
+EndGlobal

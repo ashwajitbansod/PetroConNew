@@ -1,0 +1,39 @@
+section {
+    width: 450px;
+    top: 60px;
+    margin-left: -2px;
+    height: calc(100% - 60px);
+    background-color: rgb(40, 104, 177);
+    position: absolute;
+}
+
+
+section > ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+    font-size:18px;
+    margin-top:10px;
+}
+
+section > ul > li {
+    height: 20px;
+    display: flex;
+    left: 0em;
+    /* border: 1px solid; */
+    margin: 10px;
+    padding: 10px;   
+    text-shadow: 2px ;
+}
+
+section > ul > li:hover {
+    border-bottom: 2px solid red;
+    transition: .2s ease-in ;
+    cursor: pointer;
+}
+
+li:focus {
+    outline: inherit;
+}

@@ -1,0 +1,30 @@
+<section>
+    <caption>
+        <header></header>
+        <main>
+            <div>
+                <h3>Let's login and get connected</h3>
+            </div>
+            <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+                <div class="">
+                  <input type="text" class="" id="Username" name="Username" required 
+                  [(ngModel)]="loginModel.Username"  #Username="ngModel">
+                  <div [hidden]="Username.valid || Username.pristine" class="alert alert-danger">
+                    Username is required
+                  </div>
+                </div>
+            
+                <div class="">
+                  <input type="text" class="" id="Password" name="Password" #Password="ngModel" [(ngModel)]="loginModel.Password" >
+                  <div [hidden]="Password.valid || Password.pristine" class="alert alert-danger">
+                    Password is required
+                  </div>
+                </div>
+                <button type="submit" [disabled]="!loginForm.form.valid">Submit</button>
+              </form>
+        </main>
+        <footer></footer>
+    </caption>
+</section>
+
+

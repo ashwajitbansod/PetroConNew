@@ -1,0 +1,211 @@
+<section>
+
+    <form (ngSubmit)="onSubmit()" #UserForm="ngForm" class="formContainer">
+        <div style="width: 50%;display: flex; flex-direction: column;">
+            <div class="form-group row">
+                <label for="ULA_FirstName" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="20" class="form-control" id="ULA_FirstName" name="ULA_FirstName"
+                        [(ngModel)]="userRegisterModel.ULA_FirstName" #ULA_FirstName="ngModel" placeholder="">
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_MobileNumber" class="col-sm-2 col-form-label">Mobile *</label>
+                <div class="col-sm-10">
+                    <input type="number" minlength="10" maxlength="10"
+                        [class]="userRegisterModel.UID_MobileNumber &&( UID_MobileNumber.valid || UID_MobileNumber.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_MobileNumber" required name="UID_MobileNumber"
+                        [(ngModel)]="userRegisterModel.UID_MobileNumber" #UID_MobileNumber="ngModel" placeholder="">
+                    <div [hidden]="UID_MobileNumber.valid || UID_MobileNumber.pristine" class="alert alert-danger">
+                        Mobile Number is required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_UserType" class="col-sm-2 col-form-label">User Type *</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="20"
+                        [class]="userRegisterModel.UID_UserType &&( UID_UserType.valid || UID_UserType.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_UserType" required name="UID_UserType" [(ngModel)]="userRegisterModel.UID_UserType"
+                        #UID_UserType="ngModel" placeholder="">
+                    <div [hidden]="UID_UserType.valid || UID_UserType.pristine" class="alert alert-danger">
+                        User Type is required
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_CompanyName" class="col-sm-2 col-form-label">CompanyName *</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="30"
+                        [class]="userRegisterModel.UID_CompanyName &&( UID_CompanyName.valid || UID_CompanyName.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_CompanyName" required name="UID_CompanyName"
+                        [(ngModel)]="userRegisterModel.UID_CompanyName" #UID_CompanyName="ngModel" placeholder="">
+                    <div [hidden]="UID_CompanyName.valid || UID_CompanyName.pristine" class="alert alert-danger">
+                        Company Name is required
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_ValidFrom" class="col-sm-2 col-form-label">ValidFrom</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="UID_ValidFrom" name="UID_ValidFrom"
+                        [(ngModel)]="userRegisterModel.UID_ValidFrom" #UID_ValidFrom="ngModel" placeholder="">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_ValidThru" class="col-sm-2 col-form-label">ValidThru</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="UID_ValidThru" name="UID_ValidThru"
+                        [(ngModel)]="userRegisterModel.UID_ValidThru" #UID_ValidThru="ngModel" placeholder="">
+
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="UID_PAN" class="col-sm-2 col-form-label">PAN</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="10" class="form-control" id="UID_Address" name="UID_PAN"
+                        [(ngModel)]="userRegisterModel.UID_PAN" #UID_PAN="ngModel" placeholder="">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_PumpRegNumber" class="col-sm-2 col-form-label">Pump Registration Number</label>
+                <div class="col-sm-10">
+                    <input maxlength="30" type="text" class="form-control" id="udi_Username" name="udi_Username"
+                        [(ngModel)]="userRegisterModel.UID_PumpRegNumber">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="UID_OilCompany" class="col-sm-2 col-form-label">Oil Company</label>
+                <div class="col-sm-10">
+                    <input maxlength="30" type="text" class="form-control" id="UID_OilCompany" name="UID_OilCompany"
+                        [(ngModel)]="userRegisterModel.UID_OilCompany">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="UID_TIN" class="col-sm-2 col-form-label">TIN *</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="50"
+                        [class]="userRegisterModel.UID_TIN &&( UID_TIN.valid || UID_TIN.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_Address" required name="UID_TIN" [(ngModel)]="userRegisterModel.UID_TIN"
+                        #UID_TIN="ngModel" placeholder="">
+                    <div [hidden]="UID_TIN.valid || UID_TIN.pristine" class="alert alert-danger">
+                        TIN is required
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit" [disabled]="!UserForm.form.valid" class="btn btn-primary">Add User</button>
+            <p>Form Valid : {{UserForm.form.valid}}</p>
+        </div>
+        <div style="width: 50%; display: flex;flex-direction: column;">
+            <div class="form-group row">
+
+                <label for="ULA_LastName" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input maxlength="20" type="text" class="form-control" id="ULA_LastName" name="ULA_LastName"
+                        [(ngModel)]="userRegisterModel.ULA_LastName" #ULA_LastName="ngModel" placeholder="">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_eMail" class="col-sm-2 col-form-label">eMail</label>
+                <div class="col-sm-10">
+
+                    <input maxlength="50" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                        class="form-control" id="UID_eMail" name="UID_eMail" [(ngModel)]="userRegisterModel.UID_eMail"
+                        #UID_eMail="ngModel" placeholder="">
+                    <div [hidden]="!UID_eMail.errors?.pattern" class="alert alert-danger">
+                        Invalid Email
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_Address" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="UID_Address" name="UID_Address"
+                        [(ngModel)]="userRegisterModel.UID_Address" #UID_Address="ngModel" placeholder="">
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_Address" class="col-sm-2 col-form-label">City * </label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="50"
+                        [class]="userRegisterModel.UID_City &&( UID_City.valid || UID_City.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_City" required name="UID_City" [(ngModel)]="userRegisterModel.UID_City"
+                        #UID_City="ngModel" placeholder="">
+                    <div [hidden]="UID_City.valid || UID_City.pristine" class="alert alert-danger">
+                        City is required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_State" class="col-sm-2 col-form-label">State *</label>
+                <div class="col-sm-10">
+                    <!-- <input 
+                        type="text"
+                        maxlength="50"
+                        [class]="userRegisterModel.UID_State &&( UID_State.valid || UID_State.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_State" required  name="UID_State" 
+                        [(ngModel)]="userRegisterModel.UID_State" 
+                        #UID_State="ngModel"
+                        placeholder=""
+                        (blur)="GetStates()"> -->
+
+                    <select
+                        [class]="userRegisterModel.UID_State &&( UID_State.valid || UID_State.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_State" required name="UID_State" [(ngModel)]="userRegisterModel.UID_State"
+                        #UID_State="ngModel" (click)="GetStates()" class="form-control">
+                        <option *ngFor="let item of stateList" [value]="item.stateId">{{item.name}}</option>
+                    </select>
+                    <div [hidden]="UID_State.valid || UID_State.pristine" class="alert alert-danger">
+                        State is required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_Pin" class="col-sm-2 col-form-label">Pin * </label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="12"
+                        [class]="userRegisterModel.UID_Pin &&( UID_Pin.valid || UID_Pin.pristine ) ? 'form-control' : 'form-control Required'"
+                        id="UID_Pin" required name="UID_Pin" [(ngModel)]="userRegisterModel.UID_Pin" #UID_Pin="ngModel"
+                        placeholder="">
+                    <div [hidden]="UID_Pin.valid || UID_Pin.pristine" class="alert alert-danger">
+                        Pin is required
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="UID_CIN" class="col-sm-2 col-form-label">CIN</label>
+                <div class="col-sm-10">
+                    <input type="text" maxlength="21" class="form-control" id="UID_CIN" name="UID_CIN"
+                        [(ngModel)]="userRegisterModel.UID_CIN" #UID_CIN="ngModel" placeholder="">
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="UID_GSTIN" class="col-sm-2 col-form-label">GSTIN</label>
+                <div class="col-sm-10">
+                    <input maxlength="15" type="text" class="form-control" id="UID_GSTIN" name="UID_GSTIN"
+                        [(ngModel)]="userRegisterModel.UID_GSTIN" #UID_GSTIN="ngModel" placeholder="">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

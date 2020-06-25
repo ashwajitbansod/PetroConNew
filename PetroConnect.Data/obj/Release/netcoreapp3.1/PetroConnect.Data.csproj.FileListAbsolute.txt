@@ -1,0 +1,12 @@
+D:\Other Projects\PetroLatest\PetroConnect.Data\bin\Release\netcoreapp3.1\PetroConnect.Data.deps.json
+D:\Other Projects\PetroLatest\PetroConnect.Data\bin\Release\netcoreapp3.1\PetroConnect.Data.runtimeconfig.json
+D:\Other Projects\PetroLatest\PetroConnect.Data\bin\Release\netcoreapp3.1\PetroConnect.Data.runtimeconfig.dev.json
+D:\Other Projects\PetroLatest\PetroConnect.Data\bin\Release\netcoreapp3.1\PetroConnect.Data.dll
+D:\Other Projects\PetroLatest\PetroConnect.Data\bin\Release\netcoreapp3.1\PetroConnect.Data.pdb
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.csprojAssemblyReference.cache
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.AssemblyInfoInputs.cache
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.AssemblyInfo.cs
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.csproj.CoreCompileInputs.cache
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.dll
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.pdb
+D:\Other Projects\PetroLatest\PetroConnect.Data\obj\Release\netcoreapp3.1\PetroConnect.Data.genruntimeconfig.cache
